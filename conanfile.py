@@ -23,13 +23,13 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()''')
 
     def build_requirements(self):
-        self.requires("Eggs/0.1.0@aev25/stable")
-        self.requires("Flour/0.1.0@aev25/stable")
-        self.requires("Butter/0.1.0@aev25/stable")
-        self.requires("Sugar/0.1.0@aev25/stable")
-        self.requires("Milk/0.1.0@aev25/stable")
-        self.requires("Strawberry/0.1.0@aev25/stable")
-        self.requires("Banana/0.1.0@aev25/stable")
+        self.build_requires("Eggs/0.1.0@aev25/stable")
+        self.build_requires("Flour/0.1.0@aev25/stable")
+        self.build_requires("Butter/0.1.0@aev25/stable")
+        self.build_requires("Sugar/0.1.0@aev25/stable")
+        self.build_requires("Milk/0.1.0@aev25/stable")
+        self.build_requires("Strawberry/0.1.0@aev25/stable")
+        self.build_requires("Banana/0.1.0@aev25/stable")
         
 
     def export(self):
